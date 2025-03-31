@@ -7,14 +7,13 @@ import pandas as pd
 import hashlib
 from decouple import config
 
-PATH_API = config('PATH_API')
 MYSQL_USER = config('MYSQL_USER')
 MYSQL_PASS = config('MYSQL_PASS')
 MYSQL_HOST = config('MYSQL_HOST')
 MYSQL_PORT = config('MYSQL_PORT')
 MYSQL_DEFAULT_DB = config('MYSQL_DEFAULT_DB')
-PATH_BUCKET = config('PATH_BUCKET')
 ENV_BRONZE = config('ENV_BRONZE')
+PATH_BUCKET = config('PATH_BUCKET')
 DUCKDB_DATABASE = config('DUCKDB_DATABASE')
                             
 DATETIME_HOUR_MINUTES = datetime.strftime(datetime.now(), "%Y-%m-%d %H:%M:%S")
