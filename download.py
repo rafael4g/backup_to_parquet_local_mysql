@@ -163,4 +163,13 @@ for tabela in tables:
 
 print("\n🎉 Backup particionado do banco de dados finalizado!")
 
+# ==============================
+# RESTAURAR ÍNDICES
+# ==============================
+for file in os.listdir(index_dir):
+    if file.endswith(".sql"):     
+        file_read = f'{index_dir}/{file}'            
+        utils.execute_sql_commands(sql_file=file_read, db_name=DB_NAME)
+        print(f"✅ Índices restaurados de {file}")
+
 engine.dispose()
