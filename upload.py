@@ -2,7 +2,7 @@ import src.utils as utils
 import pandas as pd #type: ignore
 import os
 
-DB_NAME = "db_mplay"
+DB_NAME = "db_movel"
 # Conectar ao banco
 #engine = utils.create_db_or_connect(DB_NAME)
 
