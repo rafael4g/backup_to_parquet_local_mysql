@@ -1,0 +1,59 @@
+{
+    "files.exclude": {
+    "**/.pyc": {
+        "when": "$(basename).py"
+    },
+    "**/__pycache__": true,
+    "**/.pytest_cache": true
+    },
+    // editor
+    "editor.wordWrap": "off",
+    "editor.fontSize": 15,
+    "editor.lineHeight": 24,
+    "editor.tabSize": 4,
+    "editor.formatOnPaste": true,
+    "files.autoSave": "afterDelay",
+    "editor.tabCompletion": "on",
+    // explorer
+    "explorer.compactFolders": false,
+    // workbench
+    "workbench.editor.enablePreview": false,
+    "workbench.sideBar.location": "left",
+    "workbench.startupEditor": "none", // <== Não abrir o arquivo de boas vindas 
+    "workbench.iconTheme": "material-icon-theme",   
+    "workbench.colorTheme": "Dracula Theme",
+    "workbench.tree.indent": 18,
+    // =================== CONFIG: arquivos e pastas ===================
+    "files.autoSaveDelay": 50000, // <== Salvar automaticamente
+    // terminal
+    "terminal.integrated.fontSize":14,
+    "terminal.integrated.profiles.windows": {
+        "Git Bash": {
+        "source": "Git Bash"
+        }
+    },
+    "terminal.integrated.defaultProfile.windows": "Git Bash",
+    // zen mode
+    "zenMode.hideActivityBar": true,
+    "zenMode.silentNotifications": true,
+    "zenMode.fullScreen": false,
+    "zenMode.centerLayout": false,
+    "zenMode.hideLineNumbers": false,
+    // =================== CONFIG: extensão material icon theme ===================
+    "material-icon-theme.folders.associations": {
+        // bucket-folder
+        "bucket": "scala",
+        "bronze": "components",
+        "silver": "constant",
+        "gold": "aws",
+        // models-folder
+        "models": "unity",
+        "marts": "plugin",
+        "sources": "keys",
+        "staging": "tasks",
+       // utils-folder
+        "utils": "tools",
+    },
+}
+
+
